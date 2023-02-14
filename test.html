@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>book</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(9, 9, 73);
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .book1 {
+      height: 200px;
+      width: 160px;
+      background-color: wheat;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+    .bookcover {
+      background-color: olive;
+      height: 100%;
+      width: 100%;
+      transform-origin: left;
+      transition-duration: 1s;
+      
+    }
+    .book1:hover .bookcover {
+      transform: rotateY(-135deg) translateX(10px);
+      box-shadow: 0 0 10px rgba(1, 1, 1, 1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="book1">
+      <div class="bookcover"></div>
+    </div>
+    
+  </div>
+</body>
+</html>
