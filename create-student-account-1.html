@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create a Weakend account</title>
+  <link rel="stylesheet" href="styles/create-student-account-1.css">
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="dots"></div>
+  </div>
+  <div class="container">
+    <div class="maindiv">
+      <img id="background-img" src="backgrounds/aboooode.png">
+      <div class="submaindiv1">
+
+        <div class="login-form">
+          <h1>Create a Student Account</h1>
+          <div class="inputs-container">
+            <div class="inputs">
+              <form action="create-student-account-2.html">
+                <div class="name">
+                  <input required type="text" placeholder="First Name">
+                  <input required type="text" placeholder="Last Name">
+                </div>
+                <div class="gender-inputs">
+                  <div class="gender-inputs-container">
+                    <div class="male">
+                      <p>Male</p>
+                      <input required type="radio" name="gender">
+                    </div>
+                    <div class="female">
+                      <p>Female</p>
+                      <input required type="radio" name="gender">
+                    </div>
+                  </div>
+                </div>
+               <div class="date-agreement-box">
+                <div class="birthday">
+                  <p>Date of birth: </p>
+                  <input required type="date">
+                </div>
+                <div class="agreement">
+                  <input required type="checkbox">
+                  <p>Please check this box to accept our <a href="">terms of use</a></p>
+                </div>
+               </div>
+                <div class="button-container">
+                  <input onclick="getname" class="next-button" type="submit" value="Next">
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="submaindiv2">
+        <div class="card">
+          <div class="attach">
+            <img src="icons/atashe (1).png">
+          </div>
+          <div class="top-picture">
+            <div class="img-container">
+              <img src="icons/weakend-icon.png">
+            </div>
+          </div>
+          <div class="img-shadow"></div>
+          <div class="text-paragraph">
+            <p>
+              Welcome dear student, please start filling out informations to join the world of endless learning and to benifit from our interesting lessons
+            </p>
+            <p id="p2">
+              If you have an account already, please sign in <a href="login-page.html">here</a>
+            </p>
+          </div>
+          <div class="progress-bar">
+            <span></span>
+            <span id="s1"></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
