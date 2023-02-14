@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #f5cf86;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 0.5fr 10px 1fr;
+}

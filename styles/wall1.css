@@ -1,0 +1,15 @@
+.wall1-container {
+  width: 14px;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: 1fr 250px 1fr;
+  height: 100vh;
+}
+.wall1-container div {
+  background-color: black;
+  width: 100%;
+}
+.mid-piece {
+  margin: 90px 0;
+  background-color: black;
+}

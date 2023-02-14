@@ -1,0 +1,210 @@
+.background-img {
+  height: 600px;
+  width: 50%;
+  float: right;
+  background-image: url(backgrounds/nadem-misgoooooooooooo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+}
+.loading-screen {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  animation: disappear 1s 1;
+  right: -1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.dots {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: dotted 6px rgb(49, 160, 112);
+  animation: rotate 4s linear infinite;
+}
+@keyframes disappear {
+  0%, 99% {
+    right: 0;
+  }
+  100% {
+    right: -1400px;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.maindiv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.bubbles {
+  position: absolute;
+  display: flex;
+}
+.bubbles span {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(195, 209, 255);
+  margin: 0 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgb(154, 166, 201),
+  0 0 50px rgb(195, 209, 255),
+  0 0 100px rgb(195, 209, 255);
+  animation: bubbling 15s linear infinite;
+  animation-duration: calc(120s / var(--i));
+}
+.bubbles span:nth-child(even) {
+  background-color: rgb(126, 204, 90);
+  box-shadow: 0 0 0 10px rgb(116, 198, 160),
+  0 0 50px rgb(126, 204, 90),
+  0 0 100px rgb(126, 204, 90);
+}
+@keyframes bubbling {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+@keyframes bubble {
+  0% {
+    bottom: 0px;
+    transform: scale(0.1);
+  }
+  100% {
+    bottom: 100vh;
+    transform: scale(1);
+  }
+}
+.title {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 20px;
+  top: 15px;
+  left: 20px;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.title img {
+  width: 180px;
+  height: 40px;
+}
+.submaindiv {
+  display: flex;
+  justify-content: right;
+  flex: 1;
+}
+.header img:hover {
+  transform: scale(1.1);
+}
+.header {
+  background-color: rgb(38, 136, 94);
+  margin: 15px 20px 0 130px;
+  border-radius: 25px;
+  padding: 0 25px;
+  min-width: 340px;
+  flex: 1;
+}
+.header img {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  transition-duration: 0.2s;
+}
+.header input {
+  float: right;
+  padding: 2px 8px;
+  margin: 6px 0 0 14px;
+  border: solid 2px transparent;
+  color: rgb(16, 124, 57);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.header a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.header input:hover {
+  background-color: rgb(243, 212, 72);
+  color: white;
+}
+.header input:active {
+  opacity: 0.8;
+}
+.text-area {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  margin: 200px 0 0 20px;
+  font-size: 18px;
+  color: white;
+}
+.text-area #h1 {
+  border-bottom: dashed 4px rgb(47, 160, 108);
+  width: fit-content;
+  padding-right: 30px;
+  margin-bottom: 25px;
+}
+.text-area p {
+  color: rgb(9, 23, 16);
+  font-family: system-ui;
+  font-weight: 600;
+  width: 45%;
+}
+.text-area span {
+  color: rgb(254, 211, 10);
+}
+.buttons {
+  width: 100%;
+  margin-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.buttons  div {
+  width: fit-content;
+  margin: auto;
+}
+.buttons input {
+  padding: 8px 10px;
+  border-radius: 15px;
+  border-color: transparent;
+  background-color: rgb(165, 177, 213);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.buttons input:hover {
+  background-color: white;
+  border: solid 2px rgb(165, 177, 213);
+  color: rgb(165, 177, 213);
+  transform: translateY(-5px);
+}
+.a1 {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+.flex p {
+  min-width: 258px;
+}
